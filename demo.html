@@ -19,6 +19,17 @@
     <p>
         1.回到过去 reset  checkout
         reset 回滚快照  HEAD~   一个~表示回滚一次   ~~表示回滚两次   or ~10  回滚十次
+        .git reset soft HEAD~
+                移动HEAD的指向，将其指向上一个快照     相当于撤回一次错误的commit
+        .git rest --mixed HEAD~
+        H        mixed默认
+                移动HEAD的指向，将其指向上一个快照
+                将移动后指向的快照滚回到暂存区
+        .git reset --hard HEAD~
+                移动HEAD的指向，将其指向上一个快照
+                将移动后指向的快照滚回到暂存区
+                将暂存区的文件还原到工作目录
+
 
 
 
