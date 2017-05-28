@@ -44,6 +44,28 @@
         比较工作目录和git 仓库中的最新提交的快照
         git diff HEAD
 
+        比较暂存区和Git仓库的快照
+        git diff --cached
+
+        git commit --amend -m "更新最近一次的提交说明"
+
+        删除文件
+        手动删除工作区的文件 可用git找回
+        git checkout -- filename
+
+        删除文件
+        git rm filename // 删除工作目录和暂存去的目录文件  快照中的不会删除
+
+        git reset soft HEAD  // 将快照切掉就可以
+
+        删除暂存区保留工作区的同名文件
+        git rm --cached filename
+
+        重命名文件
+        git mv 旧文件名 新文件名
+
+
+
 
 
     </p>
